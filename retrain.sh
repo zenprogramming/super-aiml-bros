@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo ""
+echo "Retraining Goomba Recognizer..."
 
 python ../tensorflow/hub/examples/image_retraining/retrain.py \
     --image_dir ./resources/training_data/goomba-not-goomba/data/ \
@@ -15,4 +15,5 @@ python ../tensorflow/hub/examples/image_retraining/retrain.py \
     --eval_step_interval=100 \
     --how_many_training_steps=600 \
     --architecture mobilenet_1.0_224
-    
+
+echo "Done retraining Goomba Recognizer."
